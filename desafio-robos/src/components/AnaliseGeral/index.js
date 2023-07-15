@@ -1,5 +1,4 @@
 import './AnaliseGeral.css'
-import React  from 'react';
 
 //Criando o cabeçalho do projeto
 const AnaliseGeral = () => {
