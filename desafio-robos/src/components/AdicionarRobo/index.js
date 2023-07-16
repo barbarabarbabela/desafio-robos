@@ -1,3 +1,4 @@
+import Modal from '../Modal';
 import './AdicionarRobo.css'
 
 const AdicionarRobo = () => {
