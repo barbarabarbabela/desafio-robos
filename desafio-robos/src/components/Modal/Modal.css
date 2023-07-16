@@ -1,10 +1,27 @@
 .modal{
-  background-color: #FFF;
-  box-shadow: 0 1px 4px rgba(97, 97, 97, 0.9);
-  width: 442px;
-  height: 651px;
-  padding: 24px 34px 43px 34px;
+  border: 1px solid red;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #00b39eb4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container{
+    background-color: #FFF;
+    box-shadow: 0 1px 4px rgba(97, 97, 97, 0.9);
+    width: 442px;
+    height: 651px;
+    padding: 24px 34px 43px 34px;
+  }
+
 }
+
+
 
 .modal h2{
   color: #343234;
@@ -80,6 +97,7 @@
   border-radius: 2px;
   font-weight: 700;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .label_select li:first-child{

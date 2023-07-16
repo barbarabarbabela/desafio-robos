@@ -1,8 +1,8 @@
 import './Modal.css'
 
 const Modal = () => {
-
-  return <div className="modal"> 
+    return <div className="modal"> 
+    <div className="container">
     <form>
       <h2>Adicionar novo Robô</h2>
       <h1>Vamos criar seu robô</h1>
@@ -25,6 +25,7 @@ const Modal = () => {
         <button>Criar robô</button>
         </div>
     </form>
+    </div>
   </div>
 }
 
