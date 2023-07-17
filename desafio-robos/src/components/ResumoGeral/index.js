@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 const ResumoGeral = () => {
   const [data, setData] = useState({});
-  const { moviment_summary, transactions, papers } = data;
+  const { moviment_summary, transactions } = data;
   // const movimentSummary = data.moviment_summary
 
   useEffect(() => {

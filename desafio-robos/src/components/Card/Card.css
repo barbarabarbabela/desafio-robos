@@ -1,0 +1,113 @@
+.card {
+  max-width: 330px;
+  height: fit-content;
+  margin: 24px 20px;
+  border-radius: 8px;
+  padding: 17px 25px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(151, 151, 151, 0.9);
+}
+
+.card_header p {
+  color: #b1b0b2;
+  font-size: 12px;
+  font-weight: 400;
+}
+.card_infos {
+  display: flex;
+  gap: 4px;
+  color: #b1b0b2;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+
+.card_infos p {
+  padding: 2px 6px;
+  border: 1px solid #b1b0b2;
+}
+
+.card_section {
+  display: flex;
+  border: 1px solid #e3e2e3;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 43px 13px 15px;
+  height: 64px;
+}
+
+.card_value {
+  color: #5f5d60;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 13px 15px;
+}
+
+.card_paper {
+  padding: 0;
+}
+
+.card_paper p:first-child {
+  color: #959aa2;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card_paper p:last-child {
+  color: #343234;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.card_price {
+  align-items: end;
+}
+
+.card_price p:first-child {
+  color: #b1b0b2;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.card_price:last-child {
+  color: #00b39d;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_saldo p:first-child {
+  color: #888689;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.card_saldo p:last-child {
+  color: #00b39d;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.card_trades p:first-child {
+  color: #888689;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.card_trades p:last-child {
+  color: #5f5d60;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0;
+}
