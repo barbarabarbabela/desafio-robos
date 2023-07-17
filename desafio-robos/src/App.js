@@ -13,8 +13,8 @@ function App() {
   };
 
   const fecharModal = () => {
-    setModalOpen(false)
-  }
+    setModalOpen(false);
+  };
 
   return (
     <div className="App">
@@ -22,7 +22,7 @@ function App() {
       <ResumoGeral />
 
       <div onClick={abrirModal}>
-        {isModalOpen ? <Modal onClose={fecharModal}/> : <AdicionarRobo />}
+        {isModalOpen ? <Modal onClose={fecharModal} /> : <AdicionarRobo />}
       </div>
     </div>
   );

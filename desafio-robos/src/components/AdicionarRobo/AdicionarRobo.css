@@ -10,6 +10,10 @@
   cursor: pointer;
 }
 
+.adicionar_robo:hover{
+  background-color: #f0f0f0d9;
+}
+
 .adicionar_robo img {
   border: 2px solid #E3E2E3;
   padding: 25px 21.43px;

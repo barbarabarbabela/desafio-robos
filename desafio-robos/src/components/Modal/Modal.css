@@ -19,7 +19,7 @@
   }
 }
 
-.modal_header{
+.modal_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,13 +28,17 @@
 .modal img {
   width: 11px;
   height: 11px;
-  padding:11px;
+  padding: 11px;
   cursor: pointer;
 }
 
-.modal button{
-  background-color: #FFF;
+.modal button {
+  background-color: #fff;
   border: none;
+}
+
+.modal button:hover {
+  background-color: #f0f0f0d9;
 }
 
 .modal h2 {
@@ -110,8 +114,18 @@
   cursor: pointer;
 }
 
-.label_select li:first-child {
+.label_select li:hover {
   background-color: #ff4501;
+  color: #fff;
+}
+
+.select_estilo_click {
+  background-color: #ff4501;
+  color: #fff;
+}
+
+.select_estilo{
+  background-color: #e3e2e3;
   color: #fff;
 }
 
@@ -119,7 +133,10 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+}
 
+.modal_botao button:hover {
+  background-color: #f0f0f0d9;
 }
 
 .modal_botao button {
