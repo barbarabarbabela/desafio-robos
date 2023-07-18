@@ -21,10 +21,8 @@ function App() {
     <div className="App">
       <AnaliseGeral />
       <ResumoGeral />
-
       <div onClick={abrirModal}>
-        {isModalOpen ? <Modal onClose={fecharModal} /> : <AdicionarRobo /> }
-       
+        {isModalOpen ? <Modal onClose={fecharModal} /> : <AdicionarRobo />}
       </div>
       <Card />
     </div>

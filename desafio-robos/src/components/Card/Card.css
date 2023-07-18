@@ -1,11 +1,19 @@
+section{
+
+  display:inline-block;
+  flex-wrap: wap;
+
+}
+
 .card {
-  max-width: 330px;
+  width: 330px;
   height: fit-content;
   margin: 24px 20px;
   border-radius: 8px;
-  padding: 17px 25px;
+  padding: 17px 40px 17px 25px;
   background-color: #ffffff;
   box-shadow: 0 1px 4px rgba(151, 151, 151, 0.9);
+
 }
 
 .card_header p {
@@ -31,7 +39,7 @@
   border: 1px solid #e3e2e3;
   align-items: center;
   justify-content: space-between;
-  padding: 13px 43px 13px 15px;
+  padding: 13px;
   height: 64px;
 }
 
