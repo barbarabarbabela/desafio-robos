@@ -30,11 +30,11 @@ const ResumoGeral = () => {
       <div className="secao_topo">
         <div className="secao_movimentacao">
           <h2>Resumo de movimentação</h2>
-          <h3>R$ {moviment_summary}</h3>
+          <h3>R$ {moviment_summary?.toLocaleString()}</h3>
         </div>
         <div className="secao_transacoes">
           <h2>Total de transações realizadas </h2>
-          <p>{transactions}</p>
+          <p>{transactions?.toLocaleString()}</p>
         </div>
       </div>
 

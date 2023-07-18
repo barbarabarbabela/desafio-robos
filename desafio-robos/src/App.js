@@ -5,6 +5,7 @@ import ResumoGeral from "./components/ResumoGeral";
 import Modal from "./components/Modal";
 import { useState } from "react";
 import Card from "./components/Card";
+import CriarRobo from "./components/CriarRobo";
 
 function App() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -21,9 +22,7 @@ function App() {
     <div className="App">
       <AnaliseGeral />
       <ResumoGeral />
-      <div onClick={abrirModal}>
-        {isModalOpen ? <Modal onClose={fecharModal} /> : <AdicionarRobo />}
-      </div>
+      <CriarRobo />
       <Card />
     </div>
   );

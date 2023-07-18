@@ -16,8 +16,10 @@ const CriarRobo = () => {
 
   return (
     <div className="components">
-      <div onClick={abrirModal}>
-        {isModalOpen ? <Modal onClose={fecharModal} /> : <AdicionarRobo />}
+
+      <div onClick={abrirModal} >
+      <AdicionarRobo />
+        {isModalOpen ? <Modal onClose={fecharModal} /> : null }
       </div>
     </div>
   );
