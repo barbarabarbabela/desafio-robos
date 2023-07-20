@@ -1,60 +1,59 @@
-import CampoTexto from "../CampoTexto";
 import Select from "../Select";
+import TextField from "../TextField";
 import "./Modal.css";
 import { useState } from "react";
 
-const Modal = () => {
-  const onClose = () => {};
-
-  const [nome, setNome] = useState("");
+const Modal = ({ onSubmit }) => {
+  const [name, setName] = useState("");
   const [capital, setCapital] = useState("");
-  const [estrategia, setEstrategia] = useState("");
-
-  const aoSalvar = (evento) => {
-    console.log("Form foi submetido! =>", nome, capital, estrategia);
-    evento.preventDefault()
-  };
+  const [strategy, setStrategy] = useState("");
 
   return (
     <section className="modal">
       <div className="container">
+        {/* <form  > */}
         <div className="modal_header">
-          <h2>Adicionar novo Robô</h2>
-
-          <img 
-          onClick={onClose}   
-          src="/assets/X.png" alt="Fechar modal"></img>
+          <h1>Adicionar novo Robô</h1>
+          <button className="modal_close">
+            <img src="/assets/X.png" alt="Fechar modal"></img>
+          </button>
         </div>
-        <form>
-          <h1>Vamos criar seu robô</h1>
-          <p>Preencha as informações abaixo:</p>
-          <div className="campo_texto">
-            <CampoTexto
-              obrigatorio={false}
-              label="Nome do produto"
-              placeholder="Nome do produto"
-              valor={nome}
-              aoAlterado={(valor) => setNome(valor)}
-            />
-            <CampoTexto
-              obrigatorio={false}
-              label="Capital inicial do robô"
-              placeholder="R$"
-              valor={capital}
-              aoAlterado={(valor) => setCapital(valor)}
-            />
-          </div>
-          <Select 
-          obrigatorio={false}
-          label="Selecione uma das estratégias abaixo"
-          valor={estrategia}
-          aoAlterado={valor => setEstrategia(valor)}
+
+        <h2>Vamos criar seu robô</h2>
+        <p>Preencha as informações abaixo:</p>
+        <div className="modal_text">
+          <TextField
+            required={false}
+            label="Nome do produto"
+            placeholder="Nome do produto"
+            value={name}
+            type="text"
+            textChanged={(value) => setName(value)}
           />
-          <div className="modal_botao">
-            <button onClick={onClose}>Cancelar</button>
-            <button onClick={aoSalvar}>Criar robô</button>
-          </div>
-        </form>
+          <TextField
+            required={false}
+            label="Capital inicial do robô"
+            placeholder="R$"
+            value={capital}
+            type="text"
+            textChanged={(value) => setCapital(value)}
+          />
+        </div>
+        <div className="modal_select">
+          <Select
+            required={false}
+            label="Selecione uma das estratégias abaixo"
+            value={strategy}
+            textChanged={(value) => setStrategy(value)}
+          />
+        </div>
+        <div className="modal_btn">
+          <button>Cancelar</button>
+          <button onClick={() => onSubmit(name, strategy, capital)}>
+            Criar robô
+          </button>
+        </div>
+        {/* </form> */}
       </div>
     </section>
   );

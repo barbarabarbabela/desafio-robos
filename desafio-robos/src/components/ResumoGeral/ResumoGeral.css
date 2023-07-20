@@ -1,51 +1,55 @@
-.secao_resumo{
+.secao_resumo {
   max-width: 100vw;
   height: fit-content;
   margin: 24px 20px;
   border-radius: 8px;
   padding: 16px 25.71px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: block;
 }
 
-.secao_geral h1{
+.secao_geral h1 {
   font-size: 16px;
   font-weight: 500;
   color: #343234;
 }
 
-.secao_movimentacao{
+.secao_movimentacao {
   padding: 24px 0 16px;
 }
 .secao_topo {
   display: flex;
   align-items: center;
-  gap:70%;
+  gap: 70%;
 }
 
-.secao_transacoes p{
+.secao_transacoes p {
   font-size: 20px;
 }
-.secao_resumo h2{
+.secao_resumo h2 {
   font-size: 12px;
   font-weight: 400;
   color: #888689;
 }
 
-.secao_resumo h3{
+.secao_resumo h3 {
   font-size: 20px;
   font-weight: 700;
   color: #ff4501;
 }
 
-
-.secao_separador{
+.secao_separador {
   background-color: #e3e2e3;
   height: 1px;
 }
 
-.secao_papeis{
-  padding: 16px 0;
+.container_wrapper {
+  width: 50%;
+}
+
+.secao_papeis {
+  height: fit-content;
+  width: 100%;
 }
 
 .papeis_transacoes {
@@ -53,7 +57,7 @@
   width: 61px;
   height: 19px;
   border-radius: 2px;
-  color: #FFF;
+  color: #fff;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -67,24 +71,24 @@
   align-items: center;
 }
 
-.secao_papeis p{
+.secao_papeis p {
   margin-right: 10px;
+  margin-bottom: 8px;
 }
 
-.secao_papeis hr{
+.secao_papeis hr {
   border: none;
-  border-top: 1px dashed #C5C5C5;
+  border-top: 1px dashed #c5c5c5;
   flex: 1;
   margin-left: 8.57px;
 }
 
-.papeis_valor{
+.papeis_valor {
   font-size: 12px;
   color: #888689;
-
 }
 
-.papeis_valor span{
+.papeis_valor span {
   font-weight: bold;
   color: #343234;
 }

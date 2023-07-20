@@ -18,9 +18,7 @@ const ResumoGeral = () => {
     setData(formatResponse.data);
   }
 
-  useEffect(() => {
-  }, [data]);
-
+  useEffect(() => {}, [data]);
 
   return (
     <section className="secao_resumo">
@@ -42,15 +40,19 @@ const ResumoGeral = () => {
 
       <div className="secao_papeis">
         <h2>Papéis negociados</h2>
-        {data.papers?.map((item) => ( //usando o map para iterar dentro do array data.papers
-          <div key={item.name}>
-            <p className="papeis_transacoes">{item.name}</p>
-            <hr></hr>
-            <p className="papeis_valor">
-              <span>{item.trasactions}</span> transações
-            </p>
-          </div>
-        ))}
+        {data.papers?.map(
+          (
+            item //usando o map para iterar dentro do array data.papers
+          ) => (
+            <div key={item.name}>
+              <p className="papeis_transacoes">{item.name}</p>
+              <hr></hr>
+              <p className="papeis_valor">
+                <span>{item.trasactions}</span> transações
+              </p>
+            </div>
+          )
+        )}
       </div>
     </section>
   );

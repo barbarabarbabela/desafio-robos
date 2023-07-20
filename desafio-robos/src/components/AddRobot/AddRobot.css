@@ -1,0 +1,39 @@
+.add_robot {
+  margin: 20px;
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #ffffff;
+  display: flex;
+  box-shadow: 0 1px 4px rgba(151, 151, 151, 0.9);
+  cursor: pointer;
+}
+
+.add_robot:hover {
+  background-color: #f9f8f8d9;
+}
+
+.add_robot img {
+  border: 2px solid #e3e2e3;
+  padding: 25px 20px;
+  border-radius: 4px;
+}
+
+.add_robot h1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #343234;
+}
+
+.add_robot p {
+  font-size: 12px;
+  color: #b1b0b2;
+}
+
+.add_robot span {
+  font-weight: bold;
+  color: #00b9a1;
+}
+
+.add_text {
+  padding: 0 26px;
+}

@@ -1,6 +1,6 @@
 section {
   display: inline-block;
-  flex-wrap: wap;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -32,13 +32,23 @@ section {
 .card_status {
   display: flex;
   flex-grow: 2;
-  justify-content: end;
+  justify-content: flex-end;
   color: #888689;
   font-size: 14px;
   font-weight: 400;
 }
 
-.status {
+.status_parado {
+  width: 9px;
+  height: 9px;
+  background-color: #FF4501;
+  border-radius: 50%;
+  display: flex;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.status_execucao {
   width: 8.57px;
   height: 8px;
   background-color: #15b8a1;

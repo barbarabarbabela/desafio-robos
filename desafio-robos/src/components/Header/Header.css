@@ -1,0 +1,29 @@
+.header {
+  height: 33px;
+  display: flex;
+  margin: 24px 20px;
+  border-radius: 8px;
+  align-items: center;
+  padding: 25px 26px;
+  gap: 23.57px;
+  box-shadow: 0 4px 4px rgba(151, 151, 151, 0.9);
+  background-color: #ffffff;
+}
+
+.header h1 {
+  font-size: 16px;
+}
+
+.header_break {
+  background-color: #dfdfdf;
+  width: 1.07px;
+  height: 33px;
+}
+
+.header_markup {
+  color: #b1b0b2;
+}
+
+.header_title {
+  color: #00b39d;
+}

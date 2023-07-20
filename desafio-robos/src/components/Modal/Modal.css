@@ -1,28 +1,26 @@
 .modal {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
   background-color: #00b39eb4;
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  .container {
-    background-color: #fff;
-    box-shadow: 0 1px 4px rgba(97, 97, 97, 0.9);
-    width: 442px;
-    height: 651px;
-    padding: 24px 34px 43px 34px;
-  }
+.container {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(97, 97, 97, 0.9);
+  width: 442px;
+  height: 651px;
+  padding: 24px 34px;
 }
 
 .modal_header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .modal img {
@@ -41,82 +39,74 @@
   background-color: #f0f0f0d9;
 }
 
-.modal h2 {
+.modal h1 {
   color: #343234;
   font-size: 16px;
   font-weight: 500px;
-  margin-top: 24px;
 }
 
-.modal h1 {
+.modal h2 {
   color: #5f5d60;
   font-size: 32px;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 .modal p {
   color: #888689;
   font-size: 12px;
   font-weight: 400;
+  margin-bottom: 24px;
 }
 
-.campo_texto {
-  display: flex;
+.modal_text {
   flex-direction: column;
 }
 
-.campo_texto label {
+.modal_text label {
   color: #343234;
   font-size: 12px;
   font-weight: 400;
-  padding-bottom: 8px;
 }
 
-.campo_texto input {
-  width: 100%;
+.modal_text input {
+  width: 95%;
   height: 48px;
   border: 1px solid #e3e2e3;
   border-radius: 2px;
   margin-bottom: 16px;
+  margin-top: 8px;
   padding-left: 14px;
   font-size: 12px;
   font-weight: 400;
   color: #888689;
 }
 
-.select_estilo_click {
-  background-color: #ff4501;
-  color: #fff;
-}
-
-.select_estilo {
-  background-color: #e3e2e3;
-  color: #fff;
-}
-
-.modal_botao {
+.modal_btn {
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
+  margin-top: 30px;
 }
 
-.modal_botao button:hover {
+.modal_btn button:hover {
   background-color: #f0f0f0d9;
 }
 
-.modal_botao button {
-  width: 87px;
-  height: 31px;
+.modal_btn button {
+  width: 100px;
+  height: 35px;
   border: 1px solid #e3e2e3;
   border-radius: 2px;
   font-size: 14px;
   font-weight: 400;
   color: #6a6c72;
-  justify-content: space-between;
   cursor: pointer;
 }
 
-.modal_botao button:last-child {
+.modal_btn button:last-child {
+  width: 100px;
+  height: 35px;
   background-color: #00b39d;
   color: #fff;
+  border: none;
 }
