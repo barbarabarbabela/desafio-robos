@@ -3,19 +3,19 @@ import TextField from "../TextField";
 import "./Modal.css";
 import { useState } from "react";
 
-const Modal = ({ onSubmit }) => {
+const Modal = ({ onSubmit, closeModal }) => {
   const [name, setName] = useState("");
   const [capital, setCapital] = useState("");
   const [strategy, setStrategy] = useState("");
 
   return (
-    <section className="modal">
+  <section className="modal">
       <div className="container">
         {/* <form  > */}
         <div className="modal_header">
           <h1>Adicionar novo Robô</h1>
           <button className="modal_close">
-            <img src="/assets/X.png" alt="Fechar modal"></img>
+            <img onClick={closeModal} src="/assets/X.png" alt="Fechar modal"></img>
           </button>
         </div>
 
@@ -48,15 +48,14 @@ const Modal = ({ onSubmit }) => {
           />
         </div>
         <div className="modal_btn">
-          <button>Cancelar</button>
+          <button onClick={closeModal}>Cancelar</button>
           <button onClick={() => onSubmit(name, strategy, capital)}>
             Criar robô
           </button>
         </div>
         {/* </form> */}
       </div>
-    </section>
-  );
+    </section>)
 };
 
 export default Modal;
