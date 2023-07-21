@@ -1,6 +1,4 @@
 .overview {
-  max-width: 100vw;
-  height: fit-content;
   margin: 24px 20px;
   border-radius: 8px;
   padding: 16px 25.71px;
@@ -17,13 +15,11 @@
 .overview_header {
   display: flex;
   align-items: center;
-  gap: 70%;
-  margin-top: 0;
-  padding-top: 0;
+  gap: 60%;
 }
 
 .overview_moviment {
-  padding: 24px 0 16px;
+  margin: 24px 0 16px;
 }
 
 .overview_moviment h2 {
@@ -43,9 +39,10 @@
 .overview_transactions p {
   margin-top: 0;
   font-size: 20px;
+  font-weight: bold;
 }
 
-.overview_transactions h2{
+.overview_transactions h2 {
   font-size: 12px;
   font-weight: 400;
   color: #888689;
@@ -57,37 +54,26 @@
   height: 1px;
 }
 
-.overview_papers {
-  height: fit-content;
-  width: 100%;
-}
-
-
 .overview_papers div {
   display: flex;
   align-items: center;
-}
-
-.overview_papers p {
-  margin-right: 10px;
-  margin-bottom: 8px;
 }
 
 .overview_papers hr {
   border: none;
   border-top: 1px dashed #c5c5c5;
   flex: 1;
-  margin-left: 8.57px;
+  margin: 0 8px;
 }
 
 .papers_transactions {
   background-color: #00b39d;
-  width: 61px;
-  height: 19px;
+  width: 60px;
+  height: 20px;
   border-radius: 2px;
   color: #fff;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 12px;
   font-weight: 700;

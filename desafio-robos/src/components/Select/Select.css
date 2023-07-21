@@ -20,6 +20,10 @@
   color: #888689;
 }
 
+select:focus{
+  outline: none;
+}
+
 option {
   width: 90%;
   height: 66px;
@@ -33,7 +37,10 @@ option {
   cursor: pointer;
 }
 
-option:hover{
+option:hover,
+option:focus,
+option:active,
+option:checked{
   background-color: #FF4501;
   color: #FFFFFF;
 }

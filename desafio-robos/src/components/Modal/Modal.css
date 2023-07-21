@@ -13,9 +13,9 @@
 .container {
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(97, 97, 97, 0.9);
-  width: 442px;
+  width: 350px;
   height: 651px;
-  padding: 24px 34px;
+  padding: 24px 34px;  
 }
 
 .modal_header {
@@ -109,4 +109,8 @@
   background-color: #00b39d;
   color: #fff;
   border: none;
+}
+
+.modal_btn button:last-child:hover{
+  background-color: #03d1b9;
 }

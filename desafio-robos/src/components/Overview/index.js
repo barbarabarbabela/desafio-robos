@@ -12,7 +12,7 @@ const Overview = () => {
   async function fetchOverview() {
     const response = await fetch(
       "https://api.k8s.smarttbot.com/api-front-test/api/v1/robot/overview"
-    ); //GET method default
+    );
     const formatResponse = await response.json();
     setData(formatResponse.data);
   }
@@ -41,7 +41,7 @@ const Overview = () => {
         <h2>Papéis negociados</h2>
         {data.papers?.map(
           (
-            item //usando o map para iterar dentro do array data.papers
+            item
           ) => (
             <div key={item.name}>
               <p className="papers_transactions">{item.name}</p>
