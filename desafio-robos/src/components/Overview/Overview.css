@@ -14,31 +14,42 @@
   color: #343234;
 }
 
-.overview_moviment {
-  padding: 24px 0 16px;
-}
-
-.overview_transactions p {
-  font-size: 20px;
-}
-
 .overview_header {
   display: flex;
   align-items: center;
   gap: 70%;
+  margin-top: 0;
+  padding-top: 0;
 }
 
+.overview_moviment {
+  padding: 24px 0 16px;
+}
 
 .overview_moviment h2 {
   font-size: 12px;
   font-weight: 400;
   color: #888689;
+  margin-bottom: 0;
 }
 
 .overview_moviment h3 {
   font-size: 20px;
   font-weight: 700;
   color: #ff4501;
+  margin-top: 0;
+}
+
+.overview_transactions p {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.overview_transactions h2{
+  font-size: 12px;
+  font-weight: 400;
+  color: #888689;
+  margin-bottom: 0;
 }
 
 .overview_style {
@@ -50,6 +61,7 @@
   height: fit-content;
   width: 100%;
 }
+
 
 .overview_papers div {
   display: flex;
@@ -81,7 +93,6 @@
   font-weight: 700;
   padding: 3px 6px;
 }
-
 
 .papers_value {
   font-size: 12px;
