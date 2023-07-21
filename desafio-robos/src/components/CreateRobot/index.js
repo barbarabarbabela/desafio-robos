@@ -1,6 +1,5 @@
 import AddRobot from "../AddRobot";
 import Modal from "../Modal";
-import "./CreateRobot.css";
 import { useState } from "react";
 
 const CreateRobot = () => {
@@ -34,8 +33,12 @@ const CreateRobot = () => {
       }
     );
 
+    console.log(strategy)
+
+
     closeModal();
   };
+
 
   return (
     <div className="components">

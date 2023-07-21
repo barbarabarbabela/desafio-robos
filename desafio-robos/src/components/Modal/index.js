@@ -52,7 +52,7 @@ const Modal = ({ onSubmit, closeModal }) => {
         </div>
         <div className="modal_btn">
           <button onClick={closeModal}>Cancelar</button>
-          <button onClick={() => onSubmit(name, capital, strategy)}>
+          <button onClick={() => onSubmit(name, strategy, capital)}>
             Criar robô
           </button>
         </div>
