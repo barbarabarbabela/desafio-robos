@@ -1,10 +1,9 @@
-import "./ResumoGeral.css";
+import "./Overview.css";
 import { useState, useEffect } from "react";
 
-const ResumoGeral = () => {
+const Overview = () => {
   const [data, setData] = useState({});
   const { moviment_summary, transactions } = data;
-  // const movimentSummary = data.moviment_summary
 
   useEffect(() => {
     fetchOverview();
@@ -21,33 +20,33 @@ const ResumoGeral = () => {
   useEffect(() => {}, [data]);
 
   return (
-    <section className="secao_resumo">
-      <div className="secao_geral">
+    <section className="overview">
+      <div className="overview_general">
         <h1>Resumo geral operações</h1>
       </div>
-      <div className="secao_topo">
-        <div className="secao_movimentacao">
+      <div className="overview_header">
+        <div className="overview_moviment">
           <h2>Resumo de movimentação</h2>
           <h3>R$ {moviment_summary?.toLocaleString()}</h3>
         </div>
-        <div className="secao_transacoes">
+        <div className="overview_transactions">
           <h2>Total de transações realizadas </h2>
           <p>{transactions?.toLocaleString()}</p>
         </div>
       </div>
 
-      <div className="secao_separador"></div>
+      <div className="overview_style"></div>
 
-      <div className="secao_papeis">
+      <div className="overview_papers">
         <h2>Papéis negociados</h2>
         {data.papers?.map(
           (
             item //usando o map para iterar dentro do array data.papers
           ) => (
             <div key={item.name}>
-              <p className="papeis_transacoes">{item.name}</p>
+              <p className="papers_transactions">{item.name}</p>
               <hr></hr>
-              <p className="papeis_valor">
+              <p className="papers_value">
                 <span>{item.trasactions}</span> transações
               </p>
             </div>
@@ -58,4 +57,4 @@ const ResumoGeral = () => {
   );
 };
 
-export default ResumoGeral;
+export default Overview;

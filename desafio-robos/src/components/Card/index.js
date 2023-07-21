@@ -4,19 +4,19 @@ const Card = () => {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    fetchRobo();
+    fetchRobot();
   }, []);
 
-  async function fetchRobo() {
+  async function fetchRobot() {
     const response = await fetch(
       "https://api.k8s.smarttbot.com/api-front-test/api/v1/robot",
       {
         method: "GET", //default
         headers: {
           Accept: "application/json",
-          Limit: "20", //qual valor devo colocar aqui?
-          // Order_type: "1",
-          // Order_field: "5",
+          Limit: "5",
+          Order_type: "1",
+          Order_field: "5",
         },
       }
     );

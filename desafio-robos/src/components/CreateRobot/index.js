@@ -1,25 +1,20 @@
 import AddRobot from "../AddRobot";
 import Modal from "../Modal";
-import "./CriarRobo.css";
+import "./CreateRobot.css";
 import { useState } from "react";
 
-const CriarRobo = () => {
+const CreateRobot = () => {
   const [isModalOpen, setModalOpen] = useState(false);
-
 
   const openModal = () => {
     setModalOpen(true);
   };
 
   const closeModal = () => {
-    console.log("Modal fechado")
-    setModalOpen (false)
-
-  }
+    setModalOpen(false);
+  };
 
   const handleSubmitForm = async (name, strategy, capital) => {
-    console.log(name, strategy, capital);
-
     const response = await fetch(
       "https://api.k8s.smarttbot.com/api-front-test/api/v1/robot",
       {
@@ -34,34 +29,24 @@ const CriarRobo = () => {
         }),
         headers: {
           "Content-Type": "application/json",
+          accept: "application/json",
         },
       }
     );
 
-    const formatResponse = await response.json()
-    if (response.status === 200) {
-      setModalOpen(false);
-      return;
-    }
-    closeModal()
-    console.log(formatResponse);
-  
+    closeModal();
   };
 
   return (
     <div className="components">
       <div>
         <AddRobot onClick={openModal} />
-        {isModalOpen ? 
-        <Modal 
-        onSubmit={() => handleSubmitForm()}
-        closeModal={closeModal}
-           /> 
-           : null}
+        {isModalOpen ? (
+          <Modal onSubmit={handleSubmitForm} closeModal={closeModal} />
+        ) : null}
       </div>
-      
     </div>
   );
 };
 
-export default CriarRobo;
+export default CreateRobot;

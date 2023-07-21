@@ -1,4 +1,4 @@
-.secao_resumo {
+.overview {
   max-width: 100vw;
   height: fit-content;
   margin: 24px 20px;
@@ -8,51 +8,67 @@
   display: block;
 }
 
-.secao_geral h1 {
+.overview_general h1 {
   font-size: 16px;
   font-weight: 500;
   color: #343234;
 }
 
-.secao_movimentacao {
+.overview_moviment {
   padding: 24px 0 16px;
 }
-.secao_topo {
+
+.overview_transactions p {
+  font-size: 20px;
+}
+
+.overview_header {
   display: flex;
   align-items: center;
   gap: 70%;
 }
 
-.secao_transacoes p {
-  font-size: 20px;
-}
-.secao_resumo h2 {
+
+.overview_moviment h2 {
   font-size: 12px;
   font-weight: 400;
   color: #888689;
 }
 
-.secao_resumo h3 {
+.overview_moviment h3 {
   font-size: 20px;
   font-weight: 700;
   color: #ff4501;
 }
 
-.secao_separador {
+.overview_style {
   background-color: #e3e2e3;
   height: 1px;
 }
 
-.container_wrapper {
-  width: 50%;
-}
-
-.secao_papeis {
+.overview_papers {
   height: fit-content;
   width: 100%;
 }
 
-.papeis_transacoes {
+.overview_papers div {
+  display: flex;
+  align-items: center;
+}
+
+.overview_papers p {
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+
+.overview_papers hr {
+  border: none;
+  border-top: 1px dashed #c5c5c5;
+  flex: 1;
+  margin-left: 8.57px;
+}
+
+.papers_transactions {
   background-color: #00b39d;
   width: 61px;
   height: 19px;
@@ -66,29 +82,13 @@
   padding: 3px 6px;
 }
 
-.secao_papeis div {
-  display: flex;
-  align-items: center;
-}
 
-.secao_papeis p {
-  margin-right: 10px;
-  margin-bottom: 8px;
-}
-
-.secao_papeis hr {
-  border: none;
-  border-top: 1px dashed #c5c5c5;
-  flex: 1;
-  margin-left: 8.57px;
-}
-
-.papeis_valor {
+.papers_value {
   font-size: 12px;
   color: #888689;
 }
 
-.papeis_valor span {
+.papers_value span {
   font-weight: bold;
   color: #343234;
 }

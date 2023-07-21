@@ -9,13 +9,16 @@ const Modal = ({ onSubmit, closeModal }) => {
   const [strategy, setStrategy] = useState("");
 
   return (
-  <section className="modal">
+    <section className="modal">
       <div className="container">
-        {/* <form  > */}
         <div className="modal_header">
           <h1>Adicionar novo Robô</h1>
           <button className="modal_close">
-            <img onClick={closeModal} src="/assets/X.png" alt="Fechar modal"></img>
+            <img
+              onClick={closeModal}
+              src="/assets/X.png"
+              alt="Fechar modal"
+            ></img>
           </button>
         </div>
 
@@ -49,13 +52,13 @@ const Modal = ({ onSubmit, closeModal }) => {
         </div>
         <div className="modal_btn">
           <button onClick={closeModal}>Cancelar</button>
-          <button onClick={() => onSubmit(name, strategy, capital)}>
+          <button onClick={() => onSubmit(name, capital, strategy)}>
             Criar robô
           </button>
         </div>
-        {/* </form> */}
       </div>
-    </section>)
+    </section>
+  );
 };
 
 export default Modal;
