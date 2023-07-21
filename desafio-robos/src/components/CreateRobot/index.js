@@ -33,12 +33,8 @@ const CreateRobot = () => {
       }
     );
 
-    console.log(strategy)
-
-
     closeModal();
   };
-
 
   return (
     <div className="components">
