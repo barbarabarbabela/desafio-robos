@@ -14,24 +14,21 @@ const CreateRobot = () => {
   };
 
   const handleSubmitForm = async (name, strategy, capital) => {
-    const response = await fetch(
-      "https://api.k8s.smarttbot.com/api-front-test/api/v1/robot",
-      {
-        method: "POST",
-        body: JSON.stringify({
-          title: name,
-          mode: 0,
-          strategy_id: strategy,
-          initial_capital: capital,
-          simulation: 0,
-          broker_id: 1,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-          accept: "application/json",
-        },
-      }
-    );
+    await fetch("https://api.k8s.smarttbot.com/api-front-test/api/v1/robot", {
+      method: "POST",
+      body: JSON.stringify({
+        title: name,
+        mode: 0,
+        strategy_id: strategy,
+        initial_capital: capital,
+        simulation: 0,
+        broker_id: 1,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+        accept: "application/json",
+      },
+    });
 
     closeModal();
   };
